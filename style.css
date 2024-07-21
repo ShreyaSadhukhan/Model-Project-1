@@ -1,22 +1,16 @@
-
-*{
-    margin: 0;
-    padding: 0;
-}
 :root {
     --rock: url(Stone.png);
     --paper: url(Paper.png);
     --scissors: url(Scissor.png);
     --bgc: #8CC461;
-    --bx1: #0074B6;
+    --bx1: #FFA943;
     --bx2: #BD00FF;
-    --bx3: #FFA943;
+    --bx3: #0074B6;
 }
 button:hover {
     cursor: pointer;
-    background-color: #3e8e4172
+    background-color: #3e8e4172;
 }
-
 button:active {
     background-color: #3e8e4173;
     box-shadow: 0 5px #666;
@@ -53,7 +47,7 @@ header {
 #rps p {
     margin: 0;
     color: #FFF;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -79,12 +73,12 @@ header {
     margin-bottom: 0;
     text-align: center;
     color: #656565;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.6px;
+    letter-spacing: 1.7px;
 }
 .hhscore {
     margin: 0;
@@ -110,7 +104,7 @@ header {
 .rulebook {
     display: grid;
     place-items: center;
-    height: 350px;
+    height: auto;
     width: 300px;
     background-color: #004429;
     color: #FFF;
@@ -118,7 +112,6 @@ header {
     border-radius: 10%;
     margin-bottom: 30px;
     position: relative;
-    font-size: 10px;
 }
 .rulebook.hidden {
     display: none;
@@ -149,6 +142,7 @@ header {
     font-size: medium;
     list-style-type: square;
     margin-bottom: 10px;
+
 }
 .container {
     display: flex;
@@ -173,7 +167,6 @@ header {
 .sub-box.hidden {
     display: none;
 }
-
 /*GameBox*/
 .gamebox {
     display: flex;
@@ -197,7 +190,7 @@ header {
     height: 0;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-top: 346.4px solid #000000A3;
+    border-top: 346.4px solid rgba(0, 0, 0, 0.64);
     position: relative;
 }
 .triangle2 {
@@ -220,25 +213,24 @@ button.number {
     color: black;
     font-weight: bold;
     border-radius: 50%;
-
     position: absolute;
     background-color: #FFF;
 }
 .top {
-    background: #ffffff;
+    background: var(--rock) no-repeat center;
     border: 18px solid #0074B6;
     bottom: -30px;
     left: 30%;
 }
 .bottom-left {
-    background: #ffffff;
+    background: var(--paper) no-repeat center;
     align-self: flex-end;
     border: 18px solid #FFA943;
     top: -50px;
     left: -30px;
 }
 .bottom-right {
-    background: #ffffff;
+    background: var(--scissors) no-repeat center;
     background-size: 50px;
     align-self: flex-end;
     border: 18px solid #BD00FF;
@@ -258,7 +250,6 @@ button.number {
     justify-content: space-between;
     margin: 10px;
 }
-
 .resultgenchoice .rc {
     color: #FFF;
     font-family: Roboto;
@@ -269,6 +260,7 @@ button.number {
     letter-spacing: 1.7px;
     margin: 10px 30px;
 }
+
 /*RESULT GEN CIRCLE ANIMATION*/
 .circleanimate {
     display: flex;
@@ -277,7 +269,6 @@ button.number {
     height: auto;
     width: auto;
     position: relative;
-
 }
 .pulse {
     width: 150px;
@@ -289,7 +280,7 @@ button.number {
 .pulse .main {
     position: absolute;
     top: 0%;
-    border: 28px solid rgb(8, 237, 27);
+    border: 28px solid rgb(237, 12, 8);
     width: 150px;
     height: 150px;
     z-index: 1;
@@ -298,7 +289,6 @@ button.number {
     background-image: var(--rock);
     background-repeat: no-repeat;
     background-position: center;
-
 }
 .addBox.hidden {
     display: none;
@@ -337,7 +327,7 @@ button.number {
     border-color: inherit;
     background: #FFF;
     color: #6B6B6B;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 600;
@@ -347,7 +337,7 @@ button.number {
 .main.two {
     position: absolute;
     top: 0%;
-    border: 28px solid rgb(73, 44, 141);
+    border: 28px solid rgb(8, 237, 8);
     width: 150px;
     height: 150px;
     z-index: 1;
@@ -355,7 +345,6 @@ button.number {
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 .main.one {
     left: 0%;
@@ -401,23 +390,25 @@ button.number {
         transform: scale(2);
     }
 }
+
 /*Final page CSS*/
 .finalbodypage {
     width: 100%;
-	background-color: #8CC461;
+    background-color: #8CC461;
 }
-
 .finalstuff {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-top: 10px;
 }
 #Trophy{
-margin-top: -100px;
-margin-left: -50px;
-width: 100%;
-height:50vh ;}
+    margin-top: 10px;
+    margin-left: -50px;
+    width: 100%;
+    height: 50vh;
+}
 #aa1 {
     margin-bottom: 30px;
     width: auto;
@@ -432,7 +423,6 @@ height:50vh ;}
     line-height: normal;
     letter-spacing: 9.1px;
 }
-
 #aa2 {
     margin-bottom: 10px;
     color: #FFF;
@@ -445,7 +435,7 @@ height:50vh ;}
     letter-spacing: 4.1px;
 }
 #aa3 {
-    padding: 10px;    
+    padding: 10px;
 }
 #aa3 button{
     font-size: x-large;
