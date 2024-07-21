@@ -205,8 +205,8 @@ header {
     position: absolute;
 }
 button.number {
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
